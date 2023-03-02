@@ -152,6 +152,8 @@ UPROGS=\
 	$U/_sleep\
 	$U/_pingpong\
 	$U/_primes\
+	$U/_find\
+	$U/_xargs\
 
 
 ifeq ($(LAB),syscall)
@@ -303,6 +305,8 @@ myapi.key:
 		echo An API key should be 32 characters long.; \
 		false; \
 	fi;
+
+
 
 
 .PHONY: handin tarball tarball-pref clean grade handin-check
